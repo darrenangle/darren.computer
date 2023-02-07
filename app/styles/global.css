@@ -1,0 +1,59 @@
+body {
+  font-family: "DM Sans";
+  font-weight: 400;
+}
+h1 {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: large;
+}
+
+.warble,
+.warble:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(3, 215, 205),
+    rgb(179, 0, 164)
+  );
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  display: inline-block;
+  animation: warble 0.5s ease-in-out infinite alternate,
+    rainbow-shift 5s ease-in-out infinite alternate;
+}
+
+@keyframes warble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+.rainbow:hover,
+.rainbow-go {
+  background-image: linear-gradient(
+    to right,
+    rgb(3, 215, 205),
+    rgb(179, 0, 164)
+  );
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: rainbow-shift 5s ease-in-out infinite;
+}
+
+@keyframes rainbow-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

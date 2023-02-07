@@ -1,15 +1,14 @@
 import { Link } from "@remix-run/react";
 
-import { useOptionalUser } from "~/utils";
-
 export default function Index() {
-  const user = useOptionalUser();
   return (
     <main className="flex min-h-screen items-center justify-center bg-white">
       <div className="flex-column ">
-        <h1>
-          <Link to="/bio"> darren angle</Link>
+        <h1 className="cursor-pointer warble">
+          {/* <Link to="/bio"> darren angle</Link> */}
+          darren angle
         </h1>
+        <br />
         <br />
         <ul>
           <li>
@@ -17,8 +16,9 @@ export default function Index() {
               target="_blank"
               href="https://instagram.com/griefmachines"
               rel="noreferrer noopener"
+              className="hover:red-500"
             >
-              @griefmachines
+              🎨 @griefmachines
             </a>
           </li>
           <li>
@@ -27,16 +27,16 @@ export default function Index() {
               href="https://youshouldquityourjob.com"
               rel="noreferrer noopener"
             >
-              youshouldquityourjob.com
+              🙌🏽 youshouldquityourjob.com
             </a>
           </li>
           <li>
             <a
               target="_blank"
-              href="https://unblock.dev"
+              href="https://unlock.dev"
               rel="noreferrer noopener"
             >
-              unblock.dev
+              👔 unlock.dev
             </a>
           </li>
         </ul>
