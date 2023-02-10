@@ -5,8 +5,7 @@ export default function Index() {
     <main className="flex min-h-screen items-center justify-center bg-white">
       <div className="flex-column ">
         <h1 className="cursor-pointer warble">
-          {/* <Link to="/bio"> darren angle</Link> */}
-          darren angle
+          <Link to="/bio"> darren angle</Link>
         </h1>
         <br />
         <br />
@@ -18,7 +17,7 @@ export default function Index() {
               rel="noreferrer noopener"
               className="hover:red-500"
             >
-              🎨 @griefmachines
+              <span className="mr-2">🎨</span>@griefmachines
             </a>
           </li>
           <li>
@@ -27,7 +26,7 @@ export default function Index() {
               href="https://youshouldquityourjob.com"
               rel="noreferrer noopener"
             >
-              🙌🏽 youshouldquityourjob.com
+              <span className="mr-2">🙌🏽</span>youshouldquityourjob.com
             </a>
           </li>
           <li>
@@ -36,8 +35,13 @@ export default function Index() {
               href="https://unlock.dev"
               rel="noreferrer noopener"
             >
-              👔 unlock.dev
+              <span className="mr-2">👔</span>unlock.dev
             </a>
+          </li>
+          <li>
+            <Link to="/poems">
+              <span className="mr-2">❤️‍🔥</span>poems
+            </Link>
           </li>
         </ul>
       </div>
