@@ -1,0 +1,83 @@
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+main {
+  padding: 40px;
+}
+
+h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+main > div {
+  min-width: 264px;
+  max-width: 500px;
+}
+
+.warble,
+.warble:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(3, 215, 205),
+    rgb(179, 0, 164)
+  );
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: warble 0.5s ease-in-out infinite alternate,
+    rainbow-shift 5s ease-in-out infinite alternate;
+}
+
+@keyframes warble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+@keyframes rainbow-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.pink-to-teal {
+  background-image: linear-gradient(
+    to right,
+    rgb(3, 183, 215),
+    rgb(179, 0, 164)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #00000029;
+  display: inline-block;
+}
+
+.pink-to-teal-hover:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(179, 0, 164),
+    rgb(3, 183, 215)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #00000029;
+  display: inline-block;
+}
+
+.animate-gradient {
+  background-size: 800% 800%;
+  animation: rainbow-shift 5s ease-in-out infinite alternate;
+}
