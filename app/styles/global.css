@@ -11,11 +11,12 @@ main {
 h1 {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 main > div {
   min-width: 264px;
+  max-width: 500px;
 }
 
 .warble,
@@ -64,12 +65,16 @@ main > div {
   display: inline-block;
 }
 
-.pink-to-teal:hover {
+.pink-to-teal-hover:hover {
   background-image: linear-gradient(
     to right,
     rgb(179, 0, 164),
     rgb(3, 183, 215)
   );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #00000029;
+  display: inline-block;
 }
 
 .animate-gradient {

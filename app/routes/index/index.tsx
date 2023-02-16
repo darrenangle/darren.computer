@@ -13,6 +13,15 @@ export default function Index() {
           <li>
             <a
               target="_blank"
+              href="https://unlock.dev"
+              rel="noreferrer noopener"
+            >
+              <span className="mr-2">👔</span>unlock.dev
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
               href="https://instagram.com/griefmachines"
               rel="noreferrer noopener"
               className="hover:red-500"
@@ -29,20 +38,12 @@ export default function Index() {
               <span className="mr-2">🙌🏽</span>youshouldquityourjob.com
             </a>
           </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://unlock.dev"
-              rel="noreferrer noopener"
-            >
-              <span className="mr-2">👔</span>unlock.dev
-            </a>
-          </li>
-          <li>
+
+          {/* <li>
             <Link to="/poems">
               <span className="mr-2">❤️‍🔥</span>poems
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </main>
