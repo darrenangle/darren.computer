@@ -39,11 +39,11 @@ export default function Index() {
             </a>
           </li>
 
-          {/* <li>
-            <Link to="/poems">
-              <span className="mr-2">❤️‍🔥</span>poems
+          <li>
+            <Link to="/bio">
+              <span className="mr-2">❤️‍🔥</span>about
             </Link>
-          </li> */}
+          </li>
         </ul>
       </div>
     </main>
