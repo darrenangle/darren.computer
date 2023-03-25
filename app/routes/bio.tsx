@@ -33,26 +33,6 @@ export default function Bio() {
             <i>current adventures:</i>
           </strong>
           <p>
-            {/* tech exec coaching @{" "}
-            <a
-              target="_blank"
-              href="https://unlock.dev"
-              rel="noreferrer noopener"
-              className="pink-to-teal-hover"
-            >
-              unlock.dev
-            </a>{" "}
-            <br />
-            career wizardry @{" "}
-            <a
-              target="_blank"
-              href="https://youshouldquityourjob.com"
-              rel="noreferrer noopener"
-              className="pink-to-teal-hover"
-            >
-              youshouldquityourjob.com
-            </a>
-            <br /> */}
             AI / LLM engineering @{" "}
             <a
               target="_blank"
@@ -76,12 +56,6 @@ export default function Bio() {
           </p>
           <br />
 
-          <strong>
-            <i>education:</i>
-          </strong>
-          <p>BA English & Creative Writing, Macalester College</p>
-          <p>MFA Literary Arts, Brown University</p>
-          <br />
           <strong>
             <i>some beliefs:</i>
           </strong>
@@ -109,6 +83,13 @@ export default function Bio() {
             poetry editor @ rhino <br />
             poetry instructor @ brown university <br />
           </p>
+          <br />
+
+          <strong>
+            <i>education:</i>
+          </strong>
+          <p>BA English & Creative Writing, Macalester College</p>
+          <p>MFA Literary Arts, Brown University</p>
           <br />
         </div>
       </div>
