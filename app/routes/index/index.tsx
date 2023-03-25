@@ -17,12 +17,12 @@ export default function Index() {
               rel="noreferrer noopener"
               className="hover:red-500"
             >
-              <span className="mr-7">🎨</span>ai art
+              <span className="mr-7 emoji">🦑</span>ai art
             </a>
           </li>
           <li>
             <Link to="/poems">
-              <span className="mr-7">🙌🏽</span>poems
+              <span className="mr-7 emoji">🌀</span>poems
             </Link>
           </li>
           <li>
@@ -31,13 +31,13 @@ export default function Index() {
               href="https://twitter.com/darrenangle"
               rel="noreferrer noopener"
             >
-              <span className="mr-7">🤷🏽‍♂️</span>tweets
+              <span className="mr-7 emoji">🤷🏽‍♂️</span>tweets
             </a>
           </li>
 
           <li>
             <Link to="/bio">
-              <span className="mr-7">❤️‍🔥</span>about
+              <span className="mr-7 emoji">🫥</span>about
             </Link>
           </li>
         </ul>

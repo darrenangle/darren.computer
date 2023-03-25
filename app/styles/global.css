@@ -87,3 +87,15 @@ main > div {
   background-size: 800% 800%;
   animation: rainbow-shift 5s ease-in-out infinite alternate;
 }
+
+.emoji {
+  background-image: linear-gradient(
+    to right,
+    rgb(3, 215, 205),
+    rgb(179, 0, 164)
+  );
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
