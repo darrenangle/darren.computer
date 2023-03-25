@@ -1,8 +1,11 @@
 body {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  /* very dark, beautiful linear gradient background at an angle */
+  background: #0a060d;
+  color: #acdede;
 }
 main {
   padding: 40px;
@@ -11,7 +14,7 @@ main {
 h1 {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 main > div {

@@ -5,7 +5,7 @@ export default function Bio() {
     window.location.href = "mailto:darren@unlock.dev";
   };
   return (
-    <main className="flex min-h-screen items-center justify-center bg-white">
+    <main className="flex min-h-screen items-center justify-center">
       <div className="flex-column page">
         <h1>
           <Link className="warble" to="/">
@@ -33,7 +33,7 @@ export default function Bio() {
             <i>current adventures:</i>
           </strong>
           <p>
-            tech exec coaching @{" "}
+            {/* tech exec coaching @{" "}
             <a
               target="_blank"
               href="https://unlock.dev"
@@ -52,8 +52,8 @@ export default function Bio() {
             >
               youshouldquityourjob.com
             </a>
-            <br />
-            engineering lead @{" "}
+            <br /> */}
+            AI / LLM engineering @{" "}
             <a
               target="_blank"
               href="https://www.shopify.com/editions/winter2023"
