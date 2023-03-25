@@ -16,7 +16,7 @@ export default function Poems() {
               target="_blank"
               href="https://bombmagazine.org/articles/four-poems-13/"
               rel="noreferrer noopener"
-              className="hover:text-teal-900"
+              className=""
             >
               <strong>BOMB Magazine: </strong>
               <br />
@@ -30,7 +30,7 @@ export default function Poems() {
               target={"_blank"}
               href={"https://thevolta.org/ewc62-tribute-dangle-p1.html"}
               rel="noreferrer noopener"
-              className="hover:text-teal-900"
+              className=""
             >
               <strong>The Volta: </strong>
               <br />
@@ -44,7 +44,7 @@ export default function Poems() {
                 "https://mnartists.walkerart.org/what-light-this-weeks-poem-darren-angle"
               }
               rel="noreferrer noopener"
-              className="hover:text-teal-900"
+              className=""
             >
               <strong>MN Artists: What Light </strong>
               <br />
