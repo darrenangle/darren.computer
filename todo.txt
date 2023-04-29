@@ -8,3 +8,7 @@ have the question and the response get embedded for the bot to choose from your 
 
 
 1. get the prompt to emulate your writing style and beliefs
+2. create an embeddings flow for those beliefs
+3. take a piece of your writing about something and generate some questions that could be answered by itself
+4. embed the shits and get them into an in memory array in node
+5. get some embeddings search to work.
