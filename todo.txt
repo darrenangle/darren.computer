@@ -1,0 +1,10 @@
+so actually what you should do
+
+is just only use embeddings for possible responses to an investigatory chatbot
+
+generate the questions using GPT4, and then write your responses to theme
+
+have the question and the response get embedded for the bot to choose from your writing or rework the ideas in the embedding itself
+
+
+1. get the prompt to emulate your writing style and beliefs
