@@ -1,5 +1,5 @@
 #root {
-  max-width: 768px;
+  max-width: 652px;
   margin: 0 auto;
   padding: 2rem;
   /* text-align: center; */
@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+.ellipse {
+  margin-left: -0.5em;
+  padding-bottom: 18px;
+  width: 97px;
+}
+
