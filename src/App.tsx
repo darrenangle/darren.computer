@@ -7,8 +7,8 @@ function App() {
       <h4>DARREN ANGLE</h4>
       <p>
         Software engineer and AI researcher with 12+ years of experience
-        shipping code and managing teams in biotech, healthcare, and e-commerce.
-        Also: two kids and two poetry degrees.
+        shipping code and managing teams in biotech, healthcare, e-commerce, and
+        advertising. Also: two kids and two poetry degrees.
       </p>
       <p>
         <a target="_blank" href="./Darren.Angle.Resume.2024.pdf">
