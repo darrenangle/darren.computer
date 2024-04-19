@@ -6,9 +6,9 @@ function App() {
       <img className="ellipse" src="/ellipse.svg" alt="Ellipse Graphic" />
       <h4>DARREN ANGLE</h4>
       <p>
-        Software engineer and AI researcher with 12+ years of experience
-        shipping code and managing teams in biotech, healthcare, e-commerce, and
-        advertising. Also: two kids and two poetry degrees.
+        Software engineer and AI researcher with deep experience shipping code
+        and managing teams in biotech, healthcare, e-commerce, and advertising.
+        Also: two kids and two poetry degrees.
       </p>
       <p>
         <a target="_blank" href="./Darren.Angle.Resume.2024.pdf">
