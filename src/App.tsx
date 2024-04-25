@@ -49,7 +49,7 @@ function App() {
       </p>
       <p>
         Shopify Help Center AI Experience {" •  "}
-        <a target="_blank" href="https://help.shopify.com/en/">
+        <a target="_blank" href="https://help.shopify.com/en/">rt
           Shopify
         </a>
       </p>
