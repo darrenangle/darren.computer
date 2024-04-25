@@ -11,16 +11,16 @@ function App() {
         Also: two kids and two poetry degrees.
       </p>
       <p>
-        <a target="_blank" href="./Darren.Angle.Resume.2024.pdf">
-          Resume
+        <a target="_blank" href="https://twitter.com/darrenangle">
+          Twitter
         </a>
         {" • "}
         <a target="_blank" href="https://github.com/darrenangle">
           Github
         </a>
         {" • "}
-        <a target="_blank" href="https://twitter.com/darrenangle">
-          Twitter
+        <a target="_blank" href="./Darren.Angle.Resume.2024.pdf">
+          Resume
         </a>
       </p>
 
@@ -49,7 +49,7 @@ function App() {
       </p>
       <p>
         Shopify Help Center AI Experience {" •  "}
-        <a target="_blank" href="https://help.shopify.com/en/">rt
+        <a target="_blank" href="https://help.shopify.com/en/">
           Shopify
         </a>
       </p>
