@@ -35,7 +35,7 @@ function App() {
         Identifying Neglected Hypotheses In Neurodegenerative Disease With Large
         Language Models {" •  "}
         <a target="_blank" href="https://openreview.net/forum?id=0gl0SJtd2E">
-          NeurIPS '23 GenBio
+          NeurIPS '23 GenBio Workshop
         </a>
       </p>
       <p>
