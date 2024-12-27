@@ -6,9 +6,14 @@ function App() {
       <img className="ellipse" src="/ellipse.svg" alt="Ellipse Graphic" />
       <h4>DARREN ANGLE</h4>
       <p>
-        Software engineer and AI researcher with deep experience shipping code
-        and managing teams in biotech, healthcare, e-commerce, and advertising.
-        Also: two kids and two poetry degrees.
+        Computer programmer and AI researcher with experience shipping code and
+        managing engineers in biotech, healthcare, e-commerce, and legal.
+        Studied poetry at Macalester College and Brown University. Currently
+        building{" "}
+        <a target="_blank" href="https://getgc.ai">
+          GC AI
+        </a>
+        .
       </p>
       <p>
         <a target="_blank" href="https://twitter.com/darrenangle">
