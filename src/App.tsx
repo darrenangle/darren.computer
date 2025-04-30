@@ -9,9 +9,9 @@ function App() {
         Computer programmer and AI researcher with experience shipping code and
         managing engineers in biotech, healthcare, e-commerce, and legal.
         Studied poetry at Macalester College and Brown University. Currently
-        building{" "}
-        <a target="_blank" href="https://getgc.ai">
-          GC AI
+        speeding up clinicians at{" "}
+        <a target="_blank" href="https://getfreed.ai">
+          Freed.ai
         </a>
         .
       </p>
