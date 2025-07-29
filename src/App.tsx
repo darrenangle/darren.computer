@@ -9,7 +9,7 @@ function App() {
         Computer programmer and AI researcher with experience shipping code and
         managing engineers in biotech, healthcare, e-commerce, and legal.
         Studied poetry at Macalester College and Brown University. Currently
-        speeding up clinicians at{" "}
+        building browser agents at{" "}
         <a target="_blank" href="https://getfreed.ai">
           Freed.ai
         </a>
@@ -31,9 +31,9 @@ function App() {
 
       <br />
       <h4>FORTHCOMING</h4>
-      <p>
-        Talk is Deep: Training LLMs on 1M Academic Conversations With Themselves
-      </p>
+      <p>THE BOOK OF CHANGES</p>
+      <p>YouShouldQuitYourJob.com: coaching for smart people in the wrong job</p>
+      <p>Unlock.dev</p>
       <br />
       <h4>RECENT WORK</h4>
       <p>
@@ -41,15 +41,6 @@ function App() {
         Language Models {" •  "}
         <a target="_blank" href="https://openreview.net/forum?id=0gl0SJtd2E">
           NeurIPS '23 GenBio Workshop
-        </a>
-      </p>
-      <p>
-        Ontology of Digital Health Technologies {" •  "}
-        <a
-          target="_blank"
-          href="https://vaults.prism.bio/vaults/dht/Overview/Overview"
-        >
-          vaults.prism.bio
         </a>
       </p>
       <p>
