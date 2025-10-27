@@ -31,9 +31,8 @@ function App() {
 
       <br />
       <h4>FORTHCOMING</h4>
-      <p>THE BOOK OF CHANGES</p>
-      <p>YouShouldQuitYourJob.com: coaching for smart people in the wrong job</p>
-      <p>Unlock.dev</p>
+      <p>jabberwocky bench</p>
+      <p>RETURNER</p>
       <br />
       <h4>RECENT WORK</h4>
       <p>
