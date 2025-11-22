@@ -4,11 +4,11 @@ import Fuse from "fuse.js";
 import { WritingPost } from "../data/posts";
 import { Navbar } from "./Navbar";
 
-interface WritingListProps {
+interface WorkListProps {
   posts: WritingPost[];
 }
 
-export const WritingList: React.FC<WritingListProps> = ({
+export const WorkList: React.FC<WorkListProps> = ({
   posts,
 }) => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -70,7 +70,7 @@ export const WritingList: React.FC<WritingListProps> = ({
   }, []);
 
   return (
-    <div className="writing-list">
+    <div className="work-list">
       <Navbar />
       
       <div style={{ marginBottom: '0.5rem' }}>
@@ -86,7 +86,9 @@ export const WritingList: React.FC<WritingListProps> = ({
             letterSpacing: '0.05em', 
             color: 'var(--color-text-secondary)',
             margin: 0,
-          }}>Research Notes</h3>
+          }}>
+            {selectedTag ? selectedTag : 'ALL WORK'}
+          </h3>
 
           <button
             onClick={() => setIsSearchOpen(!isSearchOpen)}
@@ -180,8 +182,8 @@ export const WritingList: React.FC<WritingListProps> = ({
       ) : (
         <ul style={{ listStyle: "none", padding: 0 }}>
           {filteredPosts.map((post) => (
-            <li key={post.id} className="writing-list-item">
-              <Link to={`/writing/${post.id}`} className="writing-list-link">
+            <li key={post.id} className="work-list-item">
+              <Link to={`/work/${post.id}`} className="work-list-link">
                 {/* Content Column */}
                 <div style={{ flex: 1 }}>
                   <div
@@ -196,7 +198,7 @@ export const WritingList: React.FC<WritingListProps> = ({
                   >
                     {post.title}
                   </div>
-                  <div className="writing-list-date">
+                  <div className="work-list-date">
                     {post.date}
                     {post.tags && (
                       <span style={{ marginLeft: '1rem', opacity: 0.6 }}>
@@ -218,7 +220,7 @@ export const WritingList: React.FC<WritingListProps> = ({
                   <img 
                     src={post.image} 
                     alt="" 
-                    className="writing-list-image"
+                    className="work-list-image"
                   />
                 )}
               </Link>

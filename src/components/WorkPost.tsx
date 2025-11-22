@@ -3,16 +3,16 @@ import { Helmet } from 'react-helmet-async';
 import { WritingPost as WritingPostType } from '../data/posts';
 import { Navbar } from './Navbar';
 
-interface WritingPostProps {
+interface WorkPostProps {
   post: WritingPostType;
 }
 
-export const WritingPost: React.FC<WritingPostProps> = ({ post }) => {
+export const WorkPost: React.FC<WorkPostProps> = ({ post }) => {
   const siteUrl = 'https://darren.computer'; // Ideally from env or config
-  const currentUrl = `${siteUrl}/writing/${post.id}`;
+  const currentUrl = `${siteUrl}/work/${post.id}`;
   
   return (
-    <div className="writing-post">
+    <div className="work-post">
       <Navbar />
       <Helmet>
         <title>{post.title} | Darren Angle</title>

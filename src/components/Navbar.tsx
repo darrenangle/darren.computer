@@ -64,7 +64,7 @@ export const Navbar: React.FC = () => {
               <span>DARREN ANGLE</span>
               <span style={{ color: 'var(--color-border-light)' }}>|</span>
             </span>
-            <Link to="/writing" style={{ textDecoration: 'none', fontWeight: 500, color: 'var(--color-link)', textTransform: 'uppercase' }}>WRITING</Link>
+            <Link to="/work" style={{ textDecoration: 'none', fontWeight: 500, color: 'var(--color-link)', textTransform: 'uppercase' }}>WORK</Link>
             <span style={{ color: 'var(--color-border-light)' }}>|</span>
             <Link to="/" style={{ textDecoration: 'none', fontWeight: 500, color: 'var(--color-link)', textTransform: 'uppercase' }}>ABOUT</Link>
             

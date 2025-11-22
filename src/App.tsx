@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./components/Home";
-import { WritingList } from "./components/WritingList";
-import { WritingPostPage } from "./components/WritingPostPage";
+import { WorkList } from "./components/WorkList";
+import { WorkPostPage } from "./components/WorkPostPage";
 import { DesignSystem } from "./components/DesignSystem";
 import { NotFound } from "./components/NotFound";
 import { Footer } from "./components/Footer";
@@ -13,8 +13,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/writing" element={<WritingList posts={posts} />} />
-        <Route path="/writing/:postId" element={<WritingPostPage />} />
+        <Route path="/work" element={<WorkList posts={posts} />} />
+        <Route path="/work/:postId" element={<WorkPostPage />} />
         <Route path="/design" element={<DesignSystem />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

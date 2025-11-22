@@ -19,7 +19,7 @@ export function Home() {
         .
       </p>
       <p>
-        <Link to="/writing">Writing</Link>
+        <Link to="/work">Work</Link>
         {" • "}
         <a target="_blank" href="https://twitter.com/darrenangle">
           Twitter
