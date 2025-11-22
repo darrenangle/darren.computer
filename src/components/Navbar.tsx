@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 
 export const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   return (
     <>
@@ -28,16 +30,44 @@ export const Navbar: React.FC = () => {
           fontSize: '0.9rem'
         }}>
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', color: 'var(--color-text)' }}>
+            <Link 
+              to="/" 
+              style={{ 
+                display: 'flex', 
+                alignItems: 'center', 
+                gap: '0.75rem', 
+                textDecoration: 'none', 
+                color: 'var(--color-text)',
+                opacity: !isHome ? 1 : 0,
+                transition: 'opacity 0.3s ease',
+                pointerEvents: !isHome ? 'auto' : 'none'
+              }}
+            >
               <img src="/ellipse.svg" className="ellipse" alt="" style={{ width: '16px', height: '16px', margin: 0, padding: 0, filter: 'var(--color-logo-filter)' }} />
-              <span style={{ fontWeight: 700, textTransform: 'uppercase' }}>Darren Angle</span>
             </Link>
           </div>
           
-          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
-            <Link to="/writing" style={{ textDecoration: 'none', fontWeight: 500, color: 'var(--color-link)' }}>Writing</Link>
-            <a href="https://twitter.com/darrenangle" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'var(--color-text-secondary)' }}>Twitter</a>
-            <a href="https://github.com/darrenangle" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'var(--color-text-secondary)' }}>Github</a>
+          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', fontSize: '0.85rem', letterSpacing: '0.05em' }}>
+            <span style={{ 
+              fontWeight: 700, 
+              textTransform: 'uppercase', 
+              color: 'var(--color-text)',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '1.5rem',
+              opacity: !isHome ? 1 : 0,
+              maxWidth: !isHome ? '200px' : '0',
+              overflow: 'hidden',
+              whiteSpace: 'nowrap',
+              transition: 'all 0.4s ease'
+            }}>
+              <span>DARREN ANGLE</span>
+              <span style={{ color: 'var(--color-border-light)' }}>|</span>
+            </span>
+            <Link to="/writing" style={{ textDecoration: 'none', fontWeight: 500, color: 'var(--color-link)', textTransform: 'uppercase' }}>WRITING</Link>
+            <span style={{ color: 'var(--color-border-light)' }}>|</span>
+            <Link to="/" style={{ textDecoration: 'none', fontWeight: 500, color: 'var(--color-link)', textTransform: 'uppercase' }}>ABOUT</Link>
+            
             <button 
               onClick={toggleTheme}
               style={{
@@ -52,7 +82,8 @@ export const Navbar: React.FC = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 width: '24px',
-                height: '24px'
+                height: '24px',
+                marginLeft: '0.5rem'
               }}
               aria-label="Toggle theme"
             >

@@ -9,6 +9,7 @@ export interface WritingPost {
   title: string;
   date: string;
   summary: string;
+  tags: string[];
   image?: string;
   content: React.ReactNode;
 }
@@ -19,7 +20,8 @@ export const posts: WritingPost[] = [
     title: 'Notes on Synthetic Data Generation',
     date: '2024-05-22',
     summary: 'Exploring techniques for generating high-quality synthetic datasets for training small models.',
-    image: '/blog-image.jpeg',
+    tags: ['research', 'ai', 'engineering'],
+    image: '/writing/hello-world-research/cover.jpeg',
     content: (
       <>
         <p>
@@ -74,7 +76,8 @@ export const posts: WritingPost[] = [
     title: 'Optimizing React Render Cycles in Large Applications',
     date: '2024-04-10',
     summary: 'A deep dive into preventing unnecessary re-renders using memoization and composition patterns, specifically in the context of data-heavy dashboards.',
-    image: '/blog-image-2.jpeg',
+    tags: ['engineering', 'react', 'performance'],
+    image: '/writing/optimizing-react-render-cycles/cover.jpeg',
     content: (
       <>
         <p>
@@ -91,6 +94,7 @@ export const posts: WritingPost[] = [
     title: 'The Future of Browser Agents',
     date: '2024-02-15',
     summary: 'Reflections on the transition from chat-based interfaces to active agents that can navigate the web, manipulate DOM elements, and perform complex workflows.',
+    tags: ['research', 'agents', 'future'],
     content: (
       <>
         <p>
@@ -104,6 +108,7 @@ export const posts: WritingPost[] = [
     title: 'On Poetry and Code',
     date: '2023-11-30',
     summary: 'Drawing parallels between the constraint-based creativity of sestinas and the rigid logic of type systems.',
+    tags: ['essays', 'poetry', 'philosophy'],
     content: (
       <>
         <p>

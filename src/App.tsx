@@ -5,6 +5,7 @@ import { WritingList } from "./components/WritingList";
 import { WritingPostPage } from "./components/WritingPostPage";
 import { DesignSystem } from "./components/DesignSystem";
 import { NotFound } from "./components/NotFound";
+import { Footer } from "./components/Footer";
 import { posts } from "./data/posts";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/design" element={<DesignSystem />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

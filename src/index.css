@@ -21,6 +21,7 @@
   --color-border-light: #c7c7cc;
   --color-code-bg: #f4f4f4;
   --color-logo-filter: none;
+  --color-bg-hover: #e4e4e6;
 
   --font-mono: 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
@@ -39,6 +40,11 @@
   --color-border-light: #333;
   --color-code-bg: #2a2a2a;
   --color-logo-filter: invert(1);
+  --color-bg-hover: #2a2a2a;
+}
+
+html {
+  overflow-y: scroll;
 }
 
 body {

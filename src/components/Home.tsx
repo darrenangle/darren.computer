@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import { Navbar } from "./Navbar";
 import "../App.css";
 
 export function Home() {
   return (
     <>
+      <Navbar />
       <img className="ellipse" src="/ellipse.svg" alt="Ellipse Graphic" />
       <h4>DARREN ANGLE</h4>
       <p>

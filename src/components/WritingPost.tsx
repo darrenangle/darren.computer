@@ -47,8 +47,7 @@ export const WritingPost: React.FC<WritingPostProps> = ({ post }) => {
               maxHeight: '400px', 
               objectFit: 'cover', 
               borderRadius: '8px', 
-              marginBottom: '2.5rem',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.08)'
+              marginBottom: '2.5rem'
             }} 
           />
         )}
