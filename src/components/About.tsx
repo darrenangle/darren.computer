@@ -15,10 +15,10 @@ export const About: React.FC = () => {
         />
         <h4 style={{ letterSpacing: '0.05em' }}>DARREN ANGLE</h4>
         
-        <p style={{ fontStyle: 'italic' }}>experimental poetics + machine intelligence</p>
+        <p style={{ fontStyle: 'italic' }}>poet + ai researcher</p>
         
         <p>
-          building bespoke, web-scale ai systems. researching llm aesthetics, style matching, and inference-time creativity.
+          applying experimental poetics to machine intelligence. building bespoke, web-scale ai systems. researching llm aesthetics, style matching, and inference-time creativity.
         </p>
 
         <br />
