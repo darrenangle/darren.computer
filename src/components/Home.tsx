@@ -31,6 +31,11 @@ export function Home() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(nextImage, 5000);
+    return () => clearTimeout(timer);
+  }, [currentImageIndex]);
+
   return (
     <div className="brutalist-home-alt">
       <Navbar />
