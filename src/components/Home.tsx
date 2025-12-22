@@ -32,7 +32,7 @@ export function Home() {
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(nextImage, 5000);
+    const timer = setTimeout(nextImage, 10000);
     return () => clearTimeout(timer);
   }, [currentImageIndex]);
 

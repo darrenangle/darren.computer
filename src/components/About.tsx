@@ -18,7 +18,7 @@ export const About: React.FC = () => {
         <p style={{ fontStyle: 'italic' }}>poet + ai researcher</p>
         
         <p>
-          passionate about experimental art and machine intelligence. engineering web-scale ai systems. researching llm aesthetics, mode collapse, and multi-agent orchestration.
+          passionate about experimental art and decentralized, egalitarian machine intelligence. engineering web-scale ai systems. researching llm aesthetics, human alignment, and multi-agent orchestration.
         </p>
 
         <br />
