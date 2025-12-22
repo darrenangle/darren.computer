@@ -31,6 +31,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ code, language = 'text', f
         overflow: 'hidden',
         fontSize: '0.9em',
       }}>
+        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
         {React.createElement(SyntaxHighlighter as any, {
           language: language,
           style: theme === 'dark' ? oneDark : oneLight,

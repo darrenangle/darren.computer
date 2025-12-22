@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { artImages } from "../data/artImages";
 import { Navbar } from "./Navbar";
+import { useImagePreloader } from "../hooks/useImagePreloader";
 import "./Home.css";
 
 export function Home() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    setCurrentImageIndex(Math.floor(Math.random() * artImages.length));
-  }, []);
+  const [currentImageIndex, setCurrentImageIndex] = useState(() => 
+    Math.floor(Math.random() * artImages.length)
+  );
+  const imagesPreloaded = useImagePreloader(artImages);
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % artImages.length);
@@ -32,24 +32,31 @@ export function Home() {
   }, []);
 
   useEffect(() => {
+    if (!imagesPreloaded) return;
     const timer = setTimeout(nextImage, 10000);
     return () => clearTimeout(timer);
-  }, [currentImageIndex]);
+  }, [currentImageIndex, imagesPreloaded]);
 
   return (
     <div className="brutalist-home-alt">
       <Navbar />
       <main className="home-hero" onClick={nextImage}>
-        <div className="hero-image-container">
-          {artImages.map((src, index) => (
-            <img 
-              key={src}
-              src={src} 
-              alt="Art" 
-              className={`hero-image ${index === currentImageIndex ? 'active' : ''}`}
-            />
-          ))}
-        </div>
+        {!imagesPreloaded ? (
+          <div className="loader-container">
+            <div className="loader"></div>
+          </div>
+        ) : (
+          <div className="hero-image-container">
+            {artImages.map((src, index) => (
+              <img 
+                key={src}
+                src={src} 
+                alt="Art" 
+                className={`hero-image ${index === currentImageIndex ? 'active' : ''}`}
+              />
+            ))}
+          </div>
+        )}
       </main>
     </div>
   );
