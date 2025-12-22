@@ -67,6 +67,7 @@ export const WorkList: React.FC<WorkListProps> = ({
     if (searchQuery || selectedTag) {
       setIsSearchOpen(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

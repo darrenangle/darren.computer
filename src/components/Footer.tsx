@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaGithub } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaFilePdf } from 'react-icons/fa';
 
 export const Footer: React.FC = () => {
   return (
@@ -31,6 +31,15 @@ export const Footer: React.FC = () => {
         aria-label="Github"
       >
         <FaGithub />
+      </a>
+      <a 
+        href="/Darren.Angle.Resume.2024.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        style={{ color: 'var(--color-text-secondary)', fontSize: '1.2rem', textDecoration: 'none' }}
+        aria-label="Resume PDF"
+      >
+        <FaFilePdf />
       </a>
     </footer>
   );

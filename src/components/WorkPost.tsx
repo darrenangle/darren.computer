@@ -46,7 +46,7 @@ export const WorkPost: React.FC<WorkPostProps> = ({ post }) => {
               height: 'auto', 
               maxHeight: '400px', 
               objectFit: 'cover', 
-              borderRadius: '8px', 
+              borderRadius: '0', 
               marginBottom: '2.5rem'
             }} 
           />
