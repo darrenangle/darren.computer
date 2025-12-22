@@ -20,7 +20,9 @@ export const Navbar: React.FC = () => {
           
           <div className="nav-right">
             <div className="nav-brand-group">
-              <span className="nav-name">DARREN ANGLE</span>
+              <Link to="/" className="nav-name-link">
+                <span className="nav-name">DARREN ANGLE</span>
+              </Link>
               <span className="nav-separator">|</span>
             </div>
             <Link to="/about" className="nav-item">ABOUT</Link>

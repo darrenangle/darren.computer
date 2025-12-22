@@ -27,13 +27,20 @@ export const About: React.FC = () => {
         <p>
           identifying neglected hypotheses in neurodegenerative disease {" "}
           <a target="_blank" href="https://openreview.net/forum?id=0gl0SJtd2E" rel="noreferrer">
-            (paper, neurips genbio)
+            (neurips genbio)
           </a>
         </p>
 
         <p>
           <a target="_blank" href="https://bombmagazine.org/articles/2014/01/31/four-poems-13/" rel="noreferrer">
             four poems in BOMB
+          </a>
+        </p>
+
+        <p>
+          griefmachines {" "}
+          <a target="_blank" href="https://www.instagram.com/griefmachines/?hl=en" rel="noreferrer">
+            (instagram)
           </a>
         </p>
 

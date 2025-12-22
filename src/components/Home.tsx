@@ -14,6 +14,23 @@ export function Home() {
     setCurrentImageIndex((prev) => (prev + 1) % artImages.length);
   };
 
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + artImages.length) % artImages.length);
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "ArrowRight") {
+        nextImage();
+      } else if (event.key === "ArrowLeft") {
+        prevImage();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
     <div className="brutalist-home-alt">
       <Navbar />
