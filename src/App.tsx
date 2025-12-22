@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { Home } from "./components/Home";
 import { DesignSystem } from "./components/DesignSystem";
 import { About } from "./components/About";
@@ -27,9 +27,9 @@ function AppContent() {
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <AppContent />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
