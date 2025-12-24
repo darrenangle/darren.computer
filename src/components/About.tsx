@@ -16,10 +16,6 @@ export const About: React.FC = () => {
         <h4 style={{ letterSpacing: '0.05em' }}>DARREN ANGLE</h4>
         
         <p style={{ fontStyle: 'italic' }}>poet + ai researcher</p>
-        
-        <p>
-          passionate about experimental art and decentralized, egalitarian machine intelligence. engineering web-scale ai systems. researching llm aesthetics, human alignment, and multi-agent orchestration.
-        </p>
 
         <br />
         <h4 style={{ letterSpacing: '0.05em' }}>selected work</h4>
