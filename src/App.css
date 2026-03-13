@@ -227,7 +227,32 @@
   color: var(--color-text);
 }
 
+.work-post article {
+  padding-top: 2rem;
+}
+
 .post-content p {
   margin-bottom: 1.2rem;
   color: var(--color-text);
+}
+
+.work-post .post-content {
+  margin-top: 2rem;
+}
+
+.post-footer {
+  margin-top: 3rem;
+  color: var(--color-text-muted);
+}
+
+.work-post.work-post-poem article {
+  padding-top: 7rem;
+}
+
+.work-post.work-post-poem .post-content {
+  margin-top: 3rem;
+}
+
+.work-post.work-post-poem .post-content p {
+  line-height: 1.85;
 }

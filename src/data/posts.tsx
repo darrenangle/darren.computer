@@ -12,9 +12,58 @@ export interface WritingPost {
   tags: string[];
   image?: string;
   content: React.ReactNode;
+  showDate?: boolean;
+  footer?: React.ReactNode;
+  className?: string;
 }
 
 export const posts: WritingPost[] = [
+  {
+    id: 'elegy-for-cd-wright',
+    title: 'elegy',
+    date: 'March 2016',
+    summary: 'A poem for C. D. Wright, originally published in Evening Will Come: A Monthly Journal of Poetics, Issue 62.',
+    tags: ['poetics'],
+    showDate: false,
+    className: 'work-post-poem',
+    content: (
+      <>
+        <p style={{ whiteSpace: 'pre-line' }}>
+          {`at work i stand
+with my mouth at the hose
+of someone else's money
+and plain dream, so often
+it's hard to feel worthy
+of safe passage.
+so many goddamn bags.
+and no one seems to mind
+that the long hall of consciousness
+makes room for shit like hot dogs.
+and then someone hides a hot dog
+in a lampshade and it's amazing
+and not hard to believe this
+trash dimension is the same
+dimension where we pulled up grass
+in your yard. it was sunny.
+we were looking for my glasses.
+they weren't even real glasses.
+i wore them because sometimes it is
+hard to feel worthy of safe passage,
+and you shook so much light
+into my head.`}
+        </p>
+      </>
+    ),
+    footer: (
+      <p style={{ fontStyle: 'italic' }}>
+        Evening Will Come: A Monthly Journal of Poetics
+        <br />
+        C. D. Wright Tribute, Issue 62
+        <br />
+        March 2016
+      </p>
+    )
+  },
   {
     id: 'hello-world-research',
     title: 'Notes on Synthetic Data Generation',

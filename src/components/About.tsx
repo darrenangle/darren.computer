@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar } from './Navbar';
 import { artImages } from '../data/artImages';
 import '../App.css';
@@ -13,9 +14,9 @@ export const About: React.FC = () => {
           alt="Darren Angle" 
           style={{ width: '100%', height: 'auto', marginBottom: '2rem', display: 'block' }} 
         />
-        <h4 style={{ letterSpacing: '0.05em' }}>DARREN ANGLE</h4>
-        
-        <p style={{ fontStyle: 'italic' }}>poet + ai researcher</p>
+        <p>
+          Darren Angle is a poet and AI engineer interested in how machine intelligence can better serve human life. He has built production AI systems across healthcare, legal, and pharma, with a focus on long-running agents, evaluation, and large-scale language model systems. His current research explores how orchestration and synthetic data can make small models more capable and more governable.
+        </p>
 
         <br />
         <h4 style={{ letterSpacing: '0.05em' }}>selected work</h4>
@@ -42,9 +43,9 @@ export const About: React.FC = () => {
 
         <p>
           elegy for cd wright in {" "}
-          <a target="_blank" href="https://www.thevolta-org.zulaufdesign.com/ewc62-tribute-dangle-p1.html" rel="noreferrer">
+          <Link to="/work/elegy-for-cd-wright">
             the volta
-          </a>
+          </Link>
         </p>
 
         <p>

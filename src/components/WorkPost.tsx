@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { WritingPost as WritingPostType } from '../data/posts';
 import { Navbar } from './Navbar';
@@ -10,9 +10,13 @@ interface WorkPostProps {
 export const WorkPost: React.FC<WorkPostProps> = ({ post }) => {
   const siteUrl = 'https://darren.computer'; // Ideally from env or config
   const currentUrl = `${siteUrl}/work/${post.id}`;
-  
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [post.id]);
+
   return (
-    <div className="work-post">
+    <div className={`work-post ${post.className ?? ''}`.trim()}>
       <Navbar />
       <Helmet>
         <title>{post.title} | Darren Angle</title>
@@ -35,7 +39,9 @@ export const WorkPost: React.FC<WorkPostProps> = ({ post }) => {
 
       <article>
         <h1>{post.title}</h1>
-        <div style={{ color: 'var(--color-text-muted)', marginBottom: '2rem' }}>{post.date}</div>
+        {post.showDate !== false && (
+          <div style={{ color: 'var(--color-text-muted)', marginBottom: '2rem' }}>{post.date}</div>
+        )}
         
         {post.image && (
           <img 
@@ -55,6 +61,12 @@ export const WorkPost: React.FC<WorkPostProps> = ({ post }) => {
         <div className="post-content">
           {post.content}
         </div>
+
+        {post.footer && (
+          <div className="post-footer">
+            {post.footer}
+          </div>
+        )}
       </article>
     </div>
   );

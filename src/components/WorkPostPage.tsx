@@ -13,7 +13,7 @@ export const WorkPostPage: React.FC = () => {
       <div className="work-post">
         <Navbar />
         <p>Post not found.</p>
-        <Link to="/work">Back to work</Link>
+        <Link to="/">Back home</Link>
       </div>
     );
   }
