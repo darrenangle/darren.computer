@@ -11,7 +11,7 @@ export const artProjects: ArtProject[] = [
   {
     id: "darren-computer-1",
     title: "darren.computer",
-    description: "Computer programmer and AI researcher with experience shipping code and managing engineers in biotech, healthcare, e-commerce, and legal. Studied poetry at Macalester College and Brown University. Currently building browser agents at Freed.ai.",
+    description: "Darren Angle is a poet and computer programmer.",
     image: "/art/darren.computer.jpeg",
     symbol: "✴︎",
   },

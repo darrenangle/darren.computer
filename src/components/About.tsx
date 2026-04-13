@@ -15,7 +15,7 @@ export const About: React.FC = () => {
           style={{ width: '100%', height: 'auto', marginBottom: '2rem', display: 'block' }} 
         />
         <p>
-          Darren Angle is a poet and AI engineer interested in how machine intelligence can better serve human life. He has built production AI systems across healthcare, legal, and pharma, with a focus on long-running agents, evaluation, and large-scale language model systems. His current research explores how orchestration and synthetic data can make small models more capable and more governable.
+          poet + computer programmer
         </p>
 
         <br />
