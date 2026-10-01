@@ -1,5 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/are-we-safe-yet",
+      "destination": "/are-we-safe-yet/",
+      "permanent": false
+    }
+  ],
   "rewrites": [
+    {
+      "source": "/are-we-safe-yet/",
+      "destination": "/are-we-safe-yet/index.html"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"

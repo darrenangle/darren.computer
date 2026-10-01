@@ -22,6 +22,13 @@ export const About: React.FC = () => {
         <h4 style={{ letterSpacing: '0.05em' }}>selected work</h4>
         
         <p>
+          <a href="/are-we-safe-yet/">
+            are we safe yet?
+          </a>
+          {" "}(digital sculpture, fall 2026)
+        </p>
+
+        <p>
           identifying neglected hypotheses in neurodegenerative disease {" "}
           <a target="_blank" href="https://openreview.net/forum?id=0gl0SJtd2E" rel="noreferrer">
             (neurips genbio)
