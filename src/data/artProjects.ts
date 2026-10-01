@@ -11,7 +11,7 @@ export const artProjects: ArtProject[] = [
   {
     id: "darren-computer-1",
     title: "darren.computer",
-    description: "Darren Angle is a poet and computer programmer.",
+    description: "Darren Angle is an artist and AI research engineer.",
     image: "/art/darren.computer.jpeg",
     symbol: "✴︎",
   },

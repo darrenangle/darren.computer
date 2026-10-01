@@ -15,7 +15,7 @@ export const About: React.FC = () => {
           style={{ width: '100%', height: 'auto', marginBottom: '2rem', display: 'block' }} 
         />
         <p>
-          poet + computer programmer
+          Darren Angle is an artist and AI research engineer.
         </p>
 
         <br />
