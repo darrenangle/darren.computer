@@ -4,12 +4,21 @@
       "source": "/are-we-safe-yet",
       "destination": "/are-we-safe-yet/",
       "permanent": false
+    },
+    {
+      "source": "/mech-interp",
+      "destination": "/mech-interp/",
+      "permanent": false
     }
   ],
   "rewrites": [
     {
       "source": "/are-we-safe-yet/",
       "destination": "/are-we-safe-yet/index.html"
+    },
+    {
+      "source": "/mech-interp/:path*",
+      "destination": "https://darrenangle.github.io/mechanistic-interpretability-anthology/:path*"
     },
     {
       "source": "/(.*)",
