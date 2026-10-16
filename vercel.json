@@ -7,12 +7,22 @@
     },
     {
       "source": "/mech-interp",
-      "destination": "/mech-interp/html/",
+      "destination": "/mech-interp/html/index.html",
       "permanent": false
     },
     {
       "source": "/mech-interp/",
-      "destination": "/mech-interp/html/",
+      "destination": "/mech-interp/html/index.html",
+      "permanent": false
+    },
+    {
+      "source": "/mech-interp/html",
+      "destination": "/mech-interp/html/index.html",
+      "permanent": false
+    },
+    {
+      "source": "/mech-interp/html/",
+      "destination": "/mech-interp/html/index.html",
       "permanent": false
     }
   ],
