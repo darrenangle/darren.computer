@@ -7,7 +7,12 @@
     },
     {
       "source": "/mech-interp",
-      "destination": "/mech-interp/",
+      "destination": "/mech-interp/html/",
+      "permanent": false
+    },
+    {
+      "source": "/mech-interp/",
+      "destination": "/mech-interp/html/",
       "permanent": false
     }
   ],
